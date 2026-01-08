@@ -1,0 +1,19 @@
+ /* ====== All styless ========= */
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+body{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+ 
+}
+
