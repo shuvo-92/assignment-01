@@ -46,8 +46,13 @@
      color: #000;
  }
 
+ 
+ header nav ul a:hover{
+    color: #30B868;
+ }
+
  header nav .btn {
-     border: none;
+     border: 1px solid transparent;
      border-radius: 4px;
      padding: 12px 16px;
      background-color: #21874c;
@@ -60,15 +65,14 @@
  }
 
  header nav .btn:hover {
-     /* background-image: linear-gradient(to right, #f4ce63, #FBBC05);
-     color: #04204e; */
+
      background-color: transparent;
      border: 1px solid #076f17;
      color: #000000;
      box-shadow: 0px 0px 10px rgba(115, 159, 117, 0.163);
  }
 
-    
+
 
 
  /* =========== Banner section style  ==================== */
@@ -76,6 +80,8 @@
      max-width: 1600px;
      padding: 154px 341px;
      background-image: url(/images/hero-bg.png);
+     background-position: center;
+     background-size: cover;
 
  }
 
@@ -119,7 +125,7 @@
 
 
  #banner .banner-container .btn {
-     border: none;
+     border: 1px solid transparent;
      border-radius: 4px;
      padding: 12px 16px;
      background-color: #20864b;
@@ -153,64 +159,208 @@
 
  #banner .banner-container #glass:hover {
      background-color: #20864b;
-     border: none;
+     border: 1px solid transparent;
      box-shadow: 0px 0px 10px rgba(115, 159, 117, 0.463);
  }
 
-/* ============ Notes area Style ==================== */
+ /* ============ Notes area Style ==================== */
 
-#notes{
+ #notes {
      max-width: 1600px;
      padding-top: 153px;
-}
+ }
 
-#notes .notes-content{
-    text-align: center;
-}
-#notes .notes-content h2{
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 16px;
-    color: #001931;
+ #notes .notes-content {
+     text-align: center;
+ }
 
-}
+ #notes .notes-content h2 {
+     font-size: 48px;
+     font-weight: bold;
+     margin-bottom: 16px;
+     color: #001931;
+ }
 
-#notes .notes-content p{
-    font-size: 16px;
-    line-height: 20px;
-    color: #627382;
-    margin-bottom: 44px;
-}
+ #notes .notes-content p {
+     font-size: 16px;
+     line-height: 20px;
+     color: #627382;
+     margin-bottom: 44px;
+ }
+
+ #notes .notes-box {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     gap: 24px;
+     text-align: center;
+     margin: 0 auto;
+     max-width: 1360px;
+ }
+
+ #notes .notes-box .notes-card {
+     padding: 24px;
+     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.062);
+     height: 322px;
+ }
+
+ #notes .notes-box .notes-card .notes-card-icon {
+     margin: 60px auto 20px;
+     width: 60px;
+     height: 60px;
+     padding: 30px;
+     border-radius: 50%;
+     background-color: #F95555;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ #notes .notes-box .notes-card .notes-card-icon img {
+     width: 32px;
+ }
+
+ #notes .notes-box .notes-card h3 {
+     font-size: 24px;
+     font-weight: 600;
+     margin-bottom: 16px;
+ }
+
+ #notes .notes-box .notes-card p {
+     font-size: 16px;
+     line-height: 20px;
+     color: #627382;
+ }
 
 
-#notes .notes-box{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 24px;
-    text-align: center;  max-width: 1360px;
-}
-#notes .notes-box .notes-card{
-    padding: 24px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.062);
-    text-align: center;
-}
 
-#notes .notes-box .notes-card img{
-    width: 32px;
-    padding: 30px;
-    background-color: #F95555;
-    border-radius: 50%;
-}
+ /* =========== Brain style =============== */
+ #brain {
+     max-width: 1360px;
+     display: flex;
+     align-items: center;
+     gap: 60px;
+     /* padding: 120px; */
+     margin: 120px;
+ }
 
-#notes .notes-box .notes-card h3{
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 16px;
-}
-#notes .notes-box .notes-card p{
-    font-size: 16px;
-    line-height: 20px;
-    color: #627382;
+ #brain .brain-img img {
+     width: 600px;
+ }
 
-}
+ #brain .brain-content h6 {
+     font-size: 16px;
+     font-weight: 800;
+     color: #30B868;
+     text-transform: uppercase;
+     margin-bottom: 16px;
+ }
+
+ #brain .brain-content h1 {
+     font-size: 48px;
+     font-weight: bold;
+     margin-bottom: 16px;
+     color: #001931;
+ }
+
+ #brain .brain-content p {
+     font-size: 16px;
+     line-height: 20px;
+     color: #627382;
+     margin-bottom: 16px;
+ }
+
+ #brain .brain-content ul {
+     list-style-type: none;
+     line-height: 30px;
+ }
+
+ #brain .brain-content ul li img {
+     vertical-align: middle;
+     width: 20px;
+ }
+
+
+ /* ======= early s=area ================== */
+ #early .early-container {
+     max-width: 1360px;
+     margin: 0px 120px 120px;
+     text-align: center;
+     background-color: #F7F6F2;
+     padding: 80px 40px;
+     border-radius: 10px;
+ }
+
+ #early .early-container h1 {
+     font-size: 40x;
+     font-weight: bold;
+     margin-bottom: 16px;
+     color: #001931;
+ }
+
+ #early .early-container P {
+     font-size: 16px;
+     line-height: 25px;
+     color: #627382;
+     margin: 24px 0px;
+ }
+
+ .btn {
+     border: 1px solid transparent;
+     border-radius: 4px;
+     padding: 12px 16px;
+     background-color: #21874c;
+     color: #fff;
+     font-size: 16px;
+     font-weight: 400;
+     transition: 0.3s;
+     cursor: pointer;
+
+ }
+
+ .btn:hover {
+     background-color: transparent;
+     border: 1px solid #076f17;
+     color: #000000;
+     box-shadow: 0px 0px 10px rgba(115, 159, 117, 0.163);
+ }
+
+
+ /* <!-- ====== footeer section ====== --> */
+
+ footer {
+     max-width: 1600px;
+     background-color: #001931;
+     padding: 120px 120px 20px;
+     /* margin-bottom: 40px; */
+ }
+
+ footer .foot-container {
+     max-width: 1360px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 80px;
+ }
+
+ footer .foot-container .social-link h6 {
+     color: #fafafa;
+     line-height: 28px;
+     text-align: center;
+     font-size: 13px;
+ }
+
+ footer .foot-container .social-link i {
+     cursor: pointer;
+     margin-left: 8px;
+ }
+
+
+ footer .copyright {
+     text-align: center;
+     color: #fff;
+     font-size: 16px;
+     color: #d8d3d3;
+     border-top: 1px solid #7c81846e;
+     padding-top: 20px;
+ }
