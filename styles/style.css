@@ -14,8 +14,31 @@
  .font-inter {
      font-family: "Inter", sans-serif;
      font-optical-sizing: auto;
-
  }
+
+
+ /* ==== Shared Style =========== */
+ .btn {
+     border: 1px solid transparent;
+     border-radius: 4px;
+     padding: 12px 16px;
+     background-color: #21874c;
+     color: #fff;
+     font-size: 16px;
+     font-weight: 400;
+     transition: 0.3s;
+     cursor: pointer;
+ }
+
+ .btn:hover {
+     background-color: transparent;
+     border: 1px solid #076f17;
+     color: #000000;
+     box-shadow: 0px 0px 10px rgba(115, 159, 117, 0.163);
+ }
+
+
+
 
  /* ====== header area style=================== */
  header nav {
@@ -36,7 +59,6 @@
      align-items: center;
      gap: 32px;
      list-style-type: none;
-
  }
 
  header nav ul a {
@@ -46,43 +68,19 @@
      color: #000;
  }
 
- 
- header nav ul a:hover{
-    color: #30B868;
+
+ header nav ul a:hover {
+     color: #30B868;
  }
-
- header nav .btn {
-     border: 1px solid transparent;
-     border-radius: 4px;
-     padding: 12px 16px;
-     background-color: #21874c;
-     color: #fff;
-     font-size: 16px;
-     font-weight: 400;
-     transition: 0.3s;
-     cursor: pointer;
-
- }
-
- header nav .btn:hover {
-
-     background-color: transparent;
-     border: 1px solid #076f17;
-     color: #000000;
-     box-shadow: 0px 0px 10px rgba(115, 159, 117, 0.163);
- }
-
-
 
 
  /* =========== Banner section style  ==================== */
  #banner {
      max-width: 1600px;
      padding: 154px 341px;
-     background-image: url(/images/hero-bg.png);
+     background-image: url(../images/hero-bg.png);
      background-position: center;
      background-size: cover;
-
  }
 
  #banner .banner-container {
@@ -102,19 +100,16 @@
      color: #30B868;
  }
 
-
  #banner .banner-container h1 {
      font-size: 72px;
      font-weight: bold;
      margin-bottom: 16px;
      color: #fff;
-
  }
 
  #banner .banner-container h1 #green {
      color: #20864b;
  }
-
 
  #banner .banner-container p {
      color: #f9efef;
@@ -123,45 +118,31 @@
      margin-bottom: 32px;
  }
 
-
- #banner .banner-container .btn {
-     border: 1px solid transparent;
-     border-radius: 4px;
-     padding: 12px 16px;
+ #banner .banner-container #btn-one {
      background-color: #20864b;
-     color: #fff;
-     font-size: 16px;
-     font-weight: 400;
-     transition: 0.3s;
-     cursor: pointer;
      margin-right: 16px;
  }
 
- #banner .banner-container .btn:hover {
+ #banner .banner-container #btn-one:hover {
+     color: #F7F6F2;
      background-color: transparent;
      border: 1px solid #fff;
-     color: #fff;
      box-shadow: 0px 0px 10px rgba(115, 159, 117, 0.463);
  }
 
- #banner .banner-container button#glass {
-     border-radius: 4px;
-     padding: 12px 16px;
+ #banner .banner-container #glass {
      background-color: transparent;
      border: 1px solid #fff;
-     color: #fff;
-     font-size: 16px;
-     font-weight: 400;
-     transition: 0.3s;
-     cursor: pointer;
-     margin-right: 16px;
  }
 
  #banner .banner-container #glass:hover {
+     color: #F7F6F2;
      background-color: #20864b;
      border: 1px solid transparent;
      box-shadow: 0px 0px 10px rgba(115, 159, 117, 0.463);
  }
+
+
 
  /* ============ Notes area Style ==================== */
 
@@ -180,14 +161,12 @@
      margin-bottom: 16px;
      color: #001931;
  }
-
  #notes .notes-content p {
      font-size: 16px;
      line-height: 20px;
      color: #627382;
      margin-bottom: 44px;
  }
-
  #notes .notes-box {
      display: flex;
      justify-content: space-around;
@@ -197,18 +176,16 @@
      margin: 0 auto;
      max-width: 1360px;
  }
-
  #notes .notes-box .notes-card {
      padding: 24px;
      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.062);
      height: 322px;
  }
-
  #notes .notes-box .notes-card .notes-card-icon {
      margin: 60px auto 20px;
      width: 60px;
      height: 60px;
-     padding: 30px;
+     padding: 10px;
      border-radius: 50%;
      background-color: #F95555;
      display: flex;
@@ -219,7 +196,6 @@
  #notes .notes-box .notes-card .notes-card-icon img {
      width: 32px;
  }
-
  #notes .notes-box .notes-card h3 {
      font-size: 24px;
      font-weight: 600;
@@ -232,6 +208,7 @@
      color: #627382;
  }
 
+ 
 
 
  /* =========== Brain style =============== */
@@ -281,7 +258,11 @@
  }
 
 
- /* ======= early s=area ================== */
+
+
+
+ /* ======= early section area ================== */
+
  #early .early-container {
      max-width: 1360px;
      margin: 0px 120px 120px;
@@ -292,8 +273,8 @@
  }
 
  #early .early-container h1 {
-     font-size: 40x;
-     font-weight: bold;
+     font-size: 42px;
+     font-weight: 700;
      margin-bottom: 16px;
      color: #001931;
  }
@@ -305,25 +286,6 @@
      margin: 24px 0px;
  }
 
- .btn {
-     border: 1px solid transparent;
-     border-radius: 4px;
-     padding: 12px 16px;
-     background-color: #21874c;
-     color: #fff;
-     font-size: 16px;
-     font-weight: 400;
-     transition: 0.3s;
-     cursor: pointer;
-
- }
-
- .btn:hover {
-     background-color: transparent;
-     border: 1px solid #076f17;
-     color: #000000;
-     box-shadow: 0px 0px 10px rgba(115, 159, 117, 0.163);
- }
 
 
  /* <!-- ====== footeer section ====== --> */
@@ -355,12 +317,10 @@
      margin-left: 8px;
  }
 
-
  footer .copyright {
      text-align: center;
-     color: #fff;
-     font-size: 16px;
-     color: #d8d3d3;
+     font-size: 14px;
+     color: #d4caca;
      border-top: 1px solid #7c81846e;
      padding-top: 20px;
  }
