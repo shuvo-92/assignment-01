@@ -180,6 +180,8 @@
      padding: 24px;
      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.062);
      height: 322px;
+     border-radius: 14px;
+     background-color: #fffefc;
  }
  #notes .notes-box .notes-card .notes-card-icon {
      margin: 60px auto 20px;
